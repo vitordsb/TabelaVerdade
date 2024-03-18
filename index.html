@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proposições</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Validator de proposições</h1>
+        <label for="expression1">Digite a primeira expressão:</label>
+        <input type="text" id="expression1" placeholder="Exemplo: p ^ q">
+
+        <label for="expression2">Digite a segunda expressão:</label>
+        <input type="text" id="expression2" placeholder="Exemplo: p v q">
+
+        <button onclick="generateTruthTables()">Gerar a tabela verdade</button>
+        <button onclick="checkEquivalence()">Checar equivalência</button>
+
+        <div id="truthTables"></div>
+        <div id="equivalenceResult" class="result"></div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
